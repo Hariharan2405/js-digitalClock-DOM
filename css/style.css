@@ -1,0 +1,144 @@
+*{
+	border:0;
+	margin:0;
+	box-sizing:border-box;
+}
+#clock{
+	display:flex;
+	align-items:center;
+	height:100vh;
+}
+@media(min-width:250px){
+	.container{
+		width:100%;
+		margin:auto auto;
+	}
+	.date,.month,.year,.hours,.minutes,.seconds{
+		font-size:2em;
+	}
+	.time-numbers span,.date-numbers span{
+		font-size:3em;
+	}
+	.day{
+		font-size:.3em;
+	}
+	h3{
+		font-size:.6em;
+	}
+}
+@media(min-width:320px){
+	.container{
+		width:95%;
+		margin:auto auto;
+	}
+	.date,.month,.year,.hours,.minutes,.seconds{
+		font-size:3em;
+	}
+	.time-numbers span,.date-numbers span{
+		font-size:4em;
+	}
+	.day{
+		font-size:.5em;
+	}
+	h3{
+		font-size:.8em;
+	}
+}
+@media(min-width:620px){
+	.container{
+		width:60%;
+		margin:auto auto;
+	}
+	.date,.month,.year,.hours,.minutes,.seconds{
+		font-size:4em;
+	}
+	.time-numbers span,.date-numbers span{
+		font-size:4.5em;
+	}
+	.day{
+		font-size:.8em;
+	}
+	h3{
+		font-size:1em;
+	}
+}
+@media(min-width:1000px){
+	.container{
+		width:40%;
+		margin:auto auto;
+	}
+	.date,.month,.year,.hours,.minutes,.seconds{
+		font-size:3.7em;
+	}
+	.day{
+		font-size:1em;
+	}
+	.time-numbers span,.date-numbers span{
+		font-size:4.7em;
+	}
+	h3{
+		font-size:1.5em;
+	}
+}
+@media(min-width:1200px){
+	.container{
+		width:35%;
+		margin:auto auto;
+	}
+	.date,.month,.year,.hours,.minutes,.seconds{
+		font-size:4em;
+	}
+	.day{
+		font-size:1em;
+	}
+	.time-numbers span,.date-numbers span{
+		font-size:5em;
+	}
+	h3{
+		font-size:1.5em;
+	}
+}
+.row{
+	color:#ccc;
+	border:2px solid #ccc;
+	border-radius:10px;
+	padding:50px;
+	background-color:#000;
+	box-shadow:0 0 10px #000;
+	
+}
+.content{
+	display:flex;
+	justify-content:space-between;
+	padding:0 20px;
+}
+
+.time-numbers,.date-numbers{
+	display:flex;
+	justify-content:space-between;
+	align-items:baseline;
+	color:red;
+	font-weight:800;
+	padding:0 10px;
+}
+.time-num,.date-numbers{
+	border:2px solid #ccc;
+	border-radius:10px;
+}
+.day{
+	display:flex;
+	justify-content:space-between;
+	padding:20px;
+}
+.round{
+	width:1em;
+	height:1em;
+	border:.2em solid #ccc;
+	border-radius:50%;
+}
+.am{
+	display:flex;
+	justify-content:right;
+	padding:5px 10px;
+	gap:5px;
+}
