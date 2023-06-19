@@ -6,7 +6,7 @@ var year=document.querySelector(".year");
 var hour=document.querySelector(".hours");
 var minute=document.querySelector(".minutes");
 var second=document.querySelector(".seconds");
-var day=document.querySelectorAll(".round");
+var day=document.querySelectorAll(".days");
 var am=document.querySelector("#am");
 var pm=document.querySelector("#pm");
 
@@ -28,6 +28,7 @@ var d=new Date();
 	hour.innerText=d.getHours();
 	minute.innerText=d.getMinutes();
 	second.innerText=d.getSeconds();
+	
 
 function dates(){
 	var d=new Date();
@@ -60,6 +61,7 @@ function dates(){
 	minute.innerText=d.getMinutes();
 	second.innerText=d.getSeconds();
 	day[i].style.backgroundColor="red";
+	// console.log(day[i]);
 }
 
 setInterval(dates,1000)
